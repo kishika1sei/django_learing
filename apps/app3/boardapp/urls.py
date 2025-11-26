@@ -3,6 +3,7 @@ from django.urls import path
 from .views import signup_func,login_func,list_func,logout_func,detail_func,good_func,read_func,BoardCreate
 
 urlpatterns = [
+    path('', list_func, name='top'),
     path('signup/', signup_func, name='signup'),
     path('login/', login_func, name='login'),
     path('list/', list_func, name='list'),
